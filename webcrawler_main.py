@@ -16,8 +16,7 @@ from automation import pf_extractor2 as pf2
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Testing Type')
-    parser.add_argument('--type', metavar='N', type=str, nargs='?', default="real",
-                        help='Automation Type : url / tms / redir / weburl / bizno / ems / pf / pf2 / pm')
+    parser.add_argument('--type', metavar='N', type=str, nargs='?', default="real", help='Automation Type : url / tms / redir / weburl / bizno / ems / pf / pf2 / pm')
     args = parser.parse_args()
     args = args.type
 
