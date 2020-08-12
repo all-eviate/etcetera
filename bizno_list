@@ -1,0 +1,8 @@
+#!/bin/bash
+
+user=$(whoami)
+dir="$(dirname "$BASH_SOURCE")"
+env="$dir/core"
+export PATH=$env:${PATH}
+script="$env/main.py --type=bizno"
+python3 $script
